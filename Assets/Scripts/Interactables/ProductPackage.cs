@@ -33,11 +33,6 @@ namespace Interactables
       ChangeLayerOfChildren(_interactableLayerName);
 
       player.GetPlayerProductControl().GetProductPackageToHand(this);
-
-      if (_productContainer.childCount == 0)
-      {
-        Destroy(gameObject);
-      }
     }
 
     private void ChangeLayerOfChildren(string layerName)
@@ -52,9 +47,9 @@ namespace Interactables
 
     public void GetProductToPackageAgain(Product product)
     {
-      int index = product.transform.GetSiblingIndex();
-
       product.gameObject.transform.SetParent(_productContainer);
+      
+      int index = product.gameObject.transform.GetSiblingIndex();
       product.gameObject.transform.localPosition = _productPlacesPositions[index];
       product.gameObject.transform.rotation = _productContainer.rotation;
       product.gameObject.transform.localScale = product.InitialScale;
@@ -72,7 +67,7 @@ namespace Interactables
     
     public Product GetProduct()
     {
-      return _productContainer.GetChild(0).gameObject.GetComponent<Product>();
+      return _productContainer.GetChild(_productContainer.childCount - 1).gameObject.GetComponent<Product>();
     }
     
     public int GetProductCount() => _productContainer.childCount;

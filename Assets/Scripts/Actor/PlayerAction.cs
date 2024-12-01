@@ -30,11 +30,9 @@ namespace Actor
         
         if (Physics.Raycast(ray, out RaycastHit hitInfo, 5f, ~_ignoreLayer))
         {
-          print(hitInfo.collider.gameObject.name);
           if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactable))
           {
             interactable.Interact(_player);
-            // _player.GetPlayerProductControl().GetProductPackageToHand();
           }
         }
       }

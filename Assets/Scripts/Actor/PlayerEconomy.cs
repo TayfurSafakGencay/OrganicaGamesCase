@@ -5,10 +5,10 @@ namespace Actor
 {
   public class PlayerEconomy : MonoBehaviour
   {
-    private float _money { get; set; } = 25;
+    private float _money { get; set; } = 1000;
 
     public Action OnMoneyChanged;
-    
+
     public void AddMoney(float money)
     {
       _money += money;

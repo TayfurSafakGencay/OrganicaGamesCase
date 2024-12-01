@@ -26,7 +26,7 @@ namespace Managers
         ProductStocks.Add(productName, new ProductStockVo
         {
           ProductName = productName,
-          StockCount = count
+          StockCount = count,
         });
       }
     }

@@ -26,7 +26,14 @@ namespace Actor
 
     public Interactables.Product GetProduct()
     {
-      if (_productPackage.GetProductCount() == 0) return null;
+      if (_productPackage == null) return null;
+      
+      if (_productPackage.GetProductCount() == 0)
+      {
+        Destroy(_productPackage.gameObject);
+        _productPackage = null;
+        return null;
+      };
       
       Interactables.Product product = _productPackage.GetProduct();
       return product;
