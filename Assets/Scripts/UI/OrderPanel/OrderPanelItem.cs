@@ -24,7 +24,7 @@ namespace UI.OrderPanel
 
     private void Awake()
     {
-      PlayerManager.Instance.OnPlayerMoneyChanged += CheckEnoughMoney;
+      PlayerManager.Instance.Player.GetPlayerEconomy().OnMoneyChanged += CheckEnoughMoney;
     }
 
     public void SetProductData(ProductData productData)
@@ -41,7 +41,7 @@ namespace UI.OrderPanel
     
     private void CheckEnoughMoney()
     {
-      float playerMoney = PlayerManager.Instance.GetPlayerMoney();
+      float playerMoney = PlayerManager.Instance.Player.GetPlayerEconomy().GetMoney();
       float productPrice = ProductManager.Instance.GetSpecificProduct(_productName).Price;
       
       _productPriceText.color = playerMoney < productPrice ? Color.red : Color.white;

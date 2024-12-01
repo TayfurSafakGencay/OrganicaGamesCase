@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ProductPackages
+  m_EditorClassIdentifier: 
+  m_GroupName: ProductPackages
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 74ce172c076d0254fa70c9ec42df40dc
+  m_SerializeEntries:
+  - m_GUID: a3a824acb12593c449dd8d4a58f32193
+    m_Address: ApplePackage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd9eb04a073c11440893bf11ed2df2e1
+    m_Address: OrangePackage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0f3e7d44c6af7f47a613885503c08c7
+    m_Address: LemonPackage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: fe9e8b1e2a9555940943e596ec661e32, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 82813e298aa4b2949872c3cca641355a, type: 2}
+    - {fileID: 11400000, guid: d4a1d010bb8f3e847ac24f73870b58db, type: 2}

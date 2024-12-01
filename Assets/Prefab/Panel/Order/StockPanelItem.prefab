@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3180927976046527738}
   - component: {fileID: 8609691119685115210}
-  - component: {fileID: 390718562045306101}
+  - component: {fileID: 8906229172053634075}
   m_Layer: 5
-  m_Name: OrderItem
+  m_Name: StockPanelItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &390718562045306101
+--- !u!114 &8906229172053634075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,13 +75,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2166136338604197679}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a33e848c7c4cd6af2721220339c172, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b977ebd80043138610221ec43d404d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _productImage: {fileID: 9222661579490887643}
+  _stockCountText: {fileID: 4698199627689939454}
   _productNameText: {fileID: 8122534112528466247}
-  _productPriceText: {fileID: 4698199627689939454}
-  _orderButton: {fileID: 4136271539302413339}
 --- !u!1 &3654727769333760481
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +360,6 @@ GameObject:
   - component: {fileID: 6871715444500906203}
   - component: {fileID: 9179774530306098773}
   - component: {fileID: 5413052193877396458}
-  - component: {fileID: 4136271539302413339}
   m_Layer: 5
   m_Name: Order
   m_TagString: Untagged
@@ -427,62 +425,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4136271539302413339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6930364553414248533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 5413052193877396458}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 390718562045306101}
-        m_TargetAssemblyTypeName: UI.OrderPanel.OrderPanelItem, Assembly-CSharp
-        m_MethodName: OrderProduct
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &7040205191739898837
 GameObject:
   m_ObjectHideFlags: 0
